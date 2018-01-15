@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alexserrapica.truckminder.NuovaOperazione">
+
+    <EditText
+        android:id="@+id/targainput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Targa"
+        android:inputType="textCapCharacters"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/dateinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/targainput"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:ems="10"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:hint="Data"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:background="@color/green"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateinput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:onClick="saveOp"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:text="Manutenzione eseguita" />
+
+</RelativeLayout>
